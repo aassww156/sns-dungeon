@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNS DUNGEON</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<h1>SNS DUNGEON</h1>
+ 
+        
+<section class="monster" id="monsterCard">
+<p>YOUR MONSTER</p>
+ 
+    <div class="monster-image">
+<img
+
+            id="monsterImage"
+
+            src="images/slime_lv3.png"
+
+            alt="SNSスライム"
+>
+</div>
+ 
+    <h2 id="monsterName">SNSスライム</h2>
+<p>Lv.<span id="levelDisplay">3</span></p>
+ 
+    <div class="xp-bar">
+<div id="xpBarFill" class="xp-bar-fill"></div>
+</div>
+ 
+    <p id="xpProgressText" class="xp-progress-text">
+
+        次のレベルまで 80 XP
+</p>
+</section>
+ 
+<p id="xpDisplay">XP 320</p>
+
+ 
+ 
+        <button id="recordButton">
+
+            SNSを開きたくなった
+</button>
+ 
+        <section id="snsChoice" class="choice hidden">
+<h2>何を開きたくなった？</h2>
+ 
+            <button class="sns-button" data-sns="Instagram">Instagram</button>
+<button class="sns-button" data-sns="TikTok">TikTok</button>
+<button class="sns-button" data-sns="YouTube">YouTube</button>
+<button class="sns-button" data-sns="X">X</button>
+<button class="sns-button" data-sns="その他">その他</button>
+</section>
+ 
+        <section id="reasonChoice" class="choice hidden">
+<h2>なぜ開きたくなった？</h2>
+ 
+            <button class="reason-button" data-reason="暇だった">暇だった</button>
+<button class="reason-button" data-reason="勉強から逃げたい">勉強から逃げたい</button>
+<button class="reason-button" data-reason="通知が気になる">通知が気になる</button>
+<button class="reason-button" data-reason="なんとなく習慣">なんとなく習慣</button>
+<button class="reason-button" data-reason="その他">その他</button>
+</section>
+ 
+        <section class="history">
+<h2>冒険の記録</h2>
+<p id="historyCount">記録 0件</p>
+<div id="historyList">
+<p>まだ記録がありません。</p>
+</div>
+</section>
+</main>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
